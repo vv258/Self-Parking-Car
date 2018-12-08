@@ -52,7 +52,15 @@ An incremental test and build strategy was adopted in this project. The control 
 
 
 ## Result
-The self-parking car was able to successfully carry out tasks autonomously: * Distance measurement using ultrasonic Sensors * Closed loop control of robot platform using optical mouse * Object identification using Raspberry Pi camera * Implementation of Parallel Parking Algorithm using state machine All the core objectives were achieved within the allotted time of 5 weeks and budget of 100 dollars(Excluding RaspberryPi).
+The self-parking car was able to successfully carry out tasks autonomously: 
+* Distance measurement using ultrasonic Sensors 
+
+* Closed loop control of robot platform using optical mouse 
+
+* Object identification using Raspberry Pi camera 
+* Implementation of Parallel Parking Algorithm using state machine 
+
+All the core objectives were achieved within the allotted time of 5 weeks and budget of 100 dollars (Excluding RaspberryPi).
 
 
 ## Conclusion
