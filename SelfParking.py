@@ -1,4 +1,16 @@
-
+# Vipin Venugopal (vv258), Part Bhatt (pb527)
+# ECE 5725 Final Project: Self Parking Car
+# 12/05/2018
+# Description: SelfParking.py consists of the state machine 
+# to implement parallel parking algorithm
+# for autonomus vehicles. It also uses Bluetin_Echo library 
+# for reading ultrasonic sensors and  
+# Fire_Hyd for object recognition using openCV
+# Notes: Before running this code, run "sudo pigpiod" 
+# in the command prompt to enable hardwarePWM
+# Press Button 17 on PTFT to initiate parking
+# In case of assertion error, relaunch the program after 
+# running "sudo modprobe bcm2835-v4l2" in command prompt
 
 # import libraries 
 import RPi.GPIO as GPIO 
