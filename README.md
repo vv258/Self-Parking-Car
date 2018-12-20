@@ -2,11 +2,14 @@
 
 The system is a low-cost prototype for implementing a parallel parking algorithm on a mobile robot car, using a Raspberry Pi, camera, Ultrasonic sensors and an optical sensor. A hardware push button starts process of self-parking the car. On pressing the button, the robot moves forward, while scanning for vacant spots on the side using ultrasonic sensor array and the camera. On finding a suitable spot of appropriate dimensions, the robot moves forward and stops at an appropriate distance. The robot then makes a 45 degree turn and back up into the spot. The ultrasonic sensors at the back of the robot allows it to move backward till the obstacle. Then the robot makes another 45 degree in the opposite direction to become straight. After this using the front and rear sensors, the robot can park itself within the spot. The control algorithm goes through various stages, where the Raspberry Pi would use various combinations of the sensor data to make decisions and rotate the servo motors in appropriate direction to maneuver the robot. The robot car should select only those spots in which it can fit in. It should also not collide with the walls or other vehicles during the entire process.
 
+![Concept](https://github.com/vv258/Self-Parking-Car/blob/master/images/1.png)
 
 ## Software Design
 The system software consists of the Self-Parking State Machine and associated functions and interfaces .  
 
 **Self-Parking State Machine:** The FSM is used to move the Robot Car from initial position to the final parked position. The various states make use of different combinations of sensors to control the movement of the robot .  
+![FSM1](https://github.com/vv258/Self-Parking-Car/blob/master/images/2.png)
+![FSM2](https://github.com/vv258/Self-Parking-Car/blob/master/images/3.png)
 
 **Hardware PWM generation:** The PWM signal required for controlling the servo motors is generated using the pigpio library. Pigpiod is a utility which launches the pigpio library as a daemon. Once launched the pigpio library runs in the background accepting commands from the pipe and socket interfaces. The pigpiod utility requires sudo privileges to launch the library but thereafter the pipe and socket commands may be issued by normal users .  
 
