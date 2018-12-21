@@ -22,3 +22,5 @@ The system software consists of the Self-Parking State Machine and associated fu
 **Ultrasonic Interface:** The HC-SR04 distance measuring transducer can be easily interfaced with code. However, using readily available library makes it easier to add multiple sensors and avoid cluttering up the main program code. The Bluetin_Echo library was installed using PIP used to read the sensor in centimeter scale .  
 
 **User Interface:** The user interface for the systems consists of a pushbutton and a PiTFT. The push button is sensed through interrupt processing using RPi.GPIO library. The Pygame library provides an excellent platform for implementing the GUI. The GUI provides feedback to the user about the current state of the parking algorithm and also forms a useful tool for debugging .  
+
+More Details at: [Hackster.io](https://www.hackster.io/vipinvngpl1992/self-parking-car-4ded0d "Self Parking Car")
